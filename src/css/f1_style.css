@@ -103,6 +103,18 @@ button{
   background: -webkit-linear-gradient(left, #F3BB0E, #04752F)
 }
 
+.submit1{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  background: -webkit-linear-gradient(left, #04752F, #F3BB0E)
+}
+.submit1:hover{
+  background: -webkit-linear-gradient(left, #F3BB0E, #04752F)
+}
+
 .forgot-pass{
   margin-top: 15px;
   text-align: center;

@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyPost - Recados</title>
-    <link rel="stylesheet" href="/css/recados.css">
-    <link rel="shortcut icon" href="/img/ficon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/recados.css">
+    <link rel="shortcut icon" href="/src/img/ficon.png" type="image/x-icon">
 </head>
 
 <body class="container">
@@ -17,8 +18,10 @@
             <button id="logout">LOGOUT</button>
             <form id="form-novo-recado">
                 <input required type="text" placeholder="Recado" id="titulo-novo-recado-input" maxlength="28" />
+
                 <input required type="text" placeholder="Descrição" id="novo-recado-input" maxlength="110" />
-                <input type="submit" value="NOVO RECADO" id="novo-recado-submit" />
+
+                <input type="submit" value="SALVAR" id="novo-recado-submit" />
             </form>
         </header>
 
@@ -31,7 +34,7 @@
         </main>
     </div>
 
-    <script src="/html/f1_index.html"></script>
+    <script src="/src/js/recados.js"></script>
 </body>
 
 </html>

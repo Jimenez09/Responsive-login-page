@@ -1,15 +1,15 @@
-let logado = sessionStorage.getItem('logado');
-let listaUsuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
+let logLogado = sessionStorage.getItem('logado1');
+let usuarios1 = JSON.parse(localStorage.getItem('usuarios') || '[]');
 
-let botaoLogin = document.getElementById('btn-login');
+let botaoLogin = document.getElementById("submit1");
 
 document.addEventListener('DOMContentLoaded', () => {
     checarLogado();
 
     function checarLogado(){
-        if(logado) {
-            salvarSessao(logado);
-            window.location.href = "f1_index.html";
+        if(logado1) {
+            salvarSessao(logado1);
+            window.location.href = "recados.html";
         }
     }
 })
@@ -19,10 +19,10 @@ botaoLogin.addEventListener('click', () => {
 })
 
 function verificarLogin(){
-    let emailHTML = document.getElementById('usuario');
+    let emailHTML = document.getElementById('userName');
     let senhaHTML = document.getElementById('senha');
 
-    let user = listaUsuarios.find(
+    let user = listaUsuarios1.find(
         (valor) => valor.email === emailHTML.value && valor.password === senhaHTML.value);
 
     if(!user){
@@ -31,9 +31,9 @@ function verificarLogin(){
     }
 
     salvarSessao(emailHTML.value);
-    window.location.href = "f1_index.html";
+    window.location.href = "recados.html";
 }
 
 function salvarSessao(data) {
-    JSON.stringify(sessionStorage.setItem("logado", data));
+    JSON.stringify(sessionStorage.setItem("logado1", data));
 }

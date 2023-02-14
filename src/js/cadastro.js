@@ -1,13 +1,13 @@
-let listaUsuarios = JSON.parse(localStorage.getItem('usuarios') || '[]');
-let logado = sessionStorage.getItem('logado');
-let formularioCadastro = document.getElementById('form');
+let listaUsuarios1 = JSON.parse(localStorage.getItem('usuarios') || '[]');
+let logado1 = sessionStorage.getItem('logado1');
+let formularioCadastro = document.getElementById("form-registro");
 
 document.addEventListener('DOMContentLoaded', () => {
     checarLogado();
 
     function checarLogado(){
-        if(logado) {
-            window.location.href = "f1_index.html";
+        if(logado1) {
+            window.location.href = "recados.html";
             return;
         }
     }
@@ -33,19 +33,19 @@ formularioCadastro.addEventListener('submit', (evento) => {
         recados: []
     }
 
-    let existe = listaUsuarios.some((valor) => valor.email === email)
+    let existe = listaUsuarios1.some((valor) => valor.email === email)
 
     if(existe){
         alert('E-mail já cadastrado!');
         return
     }
 
-    listaUsuarios.push(user);
-    salvarDadosStorage(listaUsuarios);
+    listaUsuarios1.push(user);
+    salvarDadosStorage(listaUsuarios1);
 
     window.location.href = "f1_index.html";
 });
 
-function salvarDadosStorage(listaUsuarios){
-    localStorage.setItem('usuarios', JSON.stringify(listaUsuarios));
+function salvarDadosStorage(listaUsuarios1){
+    localStorage.setItem('usuarios', JSON.stringify(listaUsuarios1));
 };

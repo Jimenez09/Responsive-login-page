@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Fórmula 1</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/src/img/ficon.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="/src/css/f1_style.css">
   <link rel="stylesheet" href="/src/css/reset.css">
-  <script src="/src/js/f1_script.js" defer type="module"></script>
-  <script src="/src/js/cadastro.js" defer type="module"></script>
-  <script src="/src/js/index.js" defer type="module"></script>
+  <link rel="shortcut icon" href="/src/img/ficon.png" type="image/x-icon">
 </head>
 
 <body>
   <div class="cont">
     <div class="form sign-in">
-      <h2>Sign In</h2>
-      <label>
-        <input type="email"  id="username" class="form-control color">
-        <span class="color">Endereço de Email</span>
+
+      <h2>Login</h2>
+
+      <label class="color" for="userName">Email
+        <input required type="email" id="userName" class="color" name="userName">
       </label>
-      <label>
-        <input type="password" id="password" class="form-control color">
-        <span class="color">Senha de acesso</span>
+      
+      <label class="color">Senha
+        <input required type="password" id="senha" class="color" name="senha">
       </label>
-      <button class="submit" type="button">Entrar</button>
+
+      <button class="submit1" id="submit1">Entrar</button>
 
       <div class="social-media">
         <ul>
@@ -54,6 +54,7 @@
 
     <div class="sub-cont">
       <div class="img">
+
         <div class="img-text m-up">
           <h2>Não tem uma conta?</h2>
           <p>Click no botão abaixo e faça a sua!</p>
@@ -61,6 +62,7 @@
             <img src="/src/img/Kauany_01.png" alt="Arte de Kauany">
           </div>
         </div>
+
         <div class="img-text m-in">
           <h2>Já tem uma conta?</h2>
           <p>Volte e faça login!</p>
@@ -68,35 +70,40 @@
             <img src="/src/img/Kauany_01.png" alt="Arte de Kauany">
           </div>
         </div>
+
         <div class="img-btn">
           <span class="m-up">Sign Up</span>
           <span class="m-in">Sing In</span>
         </div>
       </div>
+
       <form action="" id="form-registro">
         <div class="form sign-up">
           <h2>Sign Up</h2>
-          <!-- <label>
-            <span class="color">Nome</span>
-            <input type="text" id="name" class="color">
-          </label> -->
-          <label class="text-light" for="username">
-            <input type="username" id="email" class="color">
-            <span class="color">Email</span>
+
+          <label class="color" for="usuario">Nome
+            <input required type="text" id="valorUsuario" class="color">
           </label>
-          <label class="text-light" for="password">
-            <input type="password" id="senha" class="color">
-            <span class="color">Senha</span>
+
+          <label class="color" for="userName">Email
+            <input required type="email" id="valorEmail" class="color">
           </label>
-          <label class="text-light" for="password-repeat">
-            <input type="password" id="password-repeat" class="color">
-            <span class="color">Confirmar senha</span>
+
+          <label class="color" for="password">Senha
+            <input required type="password" id="valorSenha" class="color">
           </label>
-          <button type="button" id="cadastro" class="submit">Cadastrar</button>
+
+          <label class="color" for="password-repeat">Confirmar senha
+            <input required type="password" id="valorSenha2" class="color">
+          </label>
+
+          <button type="submit" id="cadastro" class="submit">Cadastrar</button>
         </div>
       </form>
     </div>
   </div>
-<!-- <script type="text/javascript" src="/js/f1_script.js"></script> -->
+  <script src="/src/js/f1_script.js"></script>
+  <script src="/src/js/cadastro.js"></script>
+  <script src="/src/js/index.js"></script>
 </body>
 </html>
