@@ -1,0 +1,47 @@
+@media (max-width: 740px) {
+    /* .container{
+        display: block;
+        width: 100%;
+        height: auto;
+    } */
+    #form-novo-recado{
+        display: flex;
+        flex-direction: column;
+    }
+    #titulo-novo-recado-input{
+        margin-top: 1rem;
+    }
+    #novo-recado-input{
+        margin-top: 0.5rem;
+    }
+    #novo-recado-submit{
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 440px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-recados{
+        display: flex;
+        flex-direction: column;
+    }
+    .lista-recados h2{
+        font-size: .75rem;
+        letter-spacing: .1rem;
+    }
+    .recado .botoes-recado .editar-recado{
+        font-size: .6rem;
+    }
+    .recado .botoes-recado .deletar-recado{
+        font-size: .6rem;
+    }
+    #recados .recado .conteudo-recado .titulo-recado{
+    width: 50%;
+    margin-right: 1rem;
+}
+}
