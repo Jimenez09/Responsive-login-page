@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1</title>
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/responsive.css">
+    <link rel="stylesheet" href="../src/css/recados.css">
+    <link rel="shortcut icon" href="../src/img/ficon.png" type="image/x-icon">
+</head>
+
+<body class="container">
+    <div class="main-recados">
+        <header class="resp">
+            <h1 id="titulo-home"></h1>
+            <button id="logout">LOGOUT</button>
+            <form id="form-novo-recado">
+                <input required type="text" placeholder="Recado" id="titulo-novo-recado-input" maxlength="100" />
+
+                <input required type="text" placeholder="Descrição" id="novo-recado-input" maxlength="500" />
+
+                <input type="submit" value="SALVAR" id="novo-recado-submit" />
+            </form>
+        </header>
+
+        <main>
+            <div class="lista-recados">
+                <h2 id="cabecalho-titulo">Título</h2>
+                <h2 id="cabecalho-descricao">Descrição</h2>
+                <div id="recados"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../src/js/recados.js"></script>
+</body>
+
+</html>
